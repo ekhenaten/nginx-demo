@@ -14,3 +14,8 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: nginx-gitops
+
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: false
